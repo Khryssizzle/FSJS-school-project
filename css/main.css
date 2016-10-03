@@ -1,6 +1,17 @@
 
 
-body {
-  background: url("img/background.jpg");
+#main {
+  background-image: url(../img/background.jpg);
   max-width: 100%;
+  background-size: cover;
+}
+
+#soon {
+  background-image: url(../img/soon.png);
+  max-width: 100%;
+  background-size: cover;
+}
+.button {
+  margin-top: 9rem;
+
 }
