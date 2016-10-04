@@ -12,6 +12,14 @@
   background-size: cover;
 }
 .button {
-  margin-top: 9rem;
+  margin-top: 4rem;
 
+}
+.tardis{
+  background-size: cover;
+}
+
+button {
+  background-color: #CC6520;
+  color: white;
 }
