@@ -10,6 +10,7 @@
   background-image: url(../img/soon.png);
   max-width: 100%;
   background-size: cover;
+  font: bold 6rem/1.5 'Audiowide', cursive;
 }
 .button {
   margin-top: 4rem;
@@ -19,7 +20,16 @@
   background-size: cover;
 }
 
-button {
+.orange {
   background-color: #CC6520;
+  color: white;
+}
+#quiz {
+  background-image: url(../img/quiz.jpg);
+  max-width: 100%;
+  background-size: cover;
+}
+.blue {
+  background-color: #2D49AF;
   color: white;
 }
