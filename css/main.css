@@ -29,7 +29,44 @@
   max-width: 100%;
   background-size: cover;
 }
-.blue {
-  background-color: #2D49AF;
+
+#question{
+  font: bold 5rem/1.5 'Righteous', cursive;
+  width: 50%;
+  color: #fff982;
+  text-align:center;
+  display: inline-block;
+}
+#answer{
+  width 45%;
+  float:right;
+  margin-right: 0px;
+}
+button {
+  width: 30%;
+  height: 35%;
+  margin: 50px 75px 50px 50px;
   color: white;
+  font: bold 2rem/1.5 'Righteous', cursive;
+  background-color: rgba(11, 27, 144, 0.9);
+  border: 0;
+  padding: 0;
+
+}
+
+.one {
+  clear:left;
+
+}
+.two {
+  clear: right;
+  float: right;
+}
+.three {
+  clear: both;
+  float: left;
+}
+
+.four {
+  float: right;
 }
