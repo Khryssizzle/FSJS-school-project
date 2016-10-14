@@ -10,7 +10,32 @@
   background-image: url(../img/soon.png);
   max-width: 100%;
   background-size: cover;
-  font: bold 6rem/1.5 'Audiowide', cursive;
+}
+.text {
+  display:inline-block;
+  width: 30%;
+  text-align: center;
+  color: #292626;
+  font: bold 6rem/1.75 'Audiowide', cursive;
+}
+.text2 {
+  display:inline-block;
+  width: 25%;
+  text-align: center;
+  color: #292626;
+  float:right;
+  clear: right;
+  font: bold 5rem/1.5 'Audiowide', cursive;
+}
+.text3 {
+  display:inline-block;
+  width: 25%;
+  height: 45%;
+  text-align: center;
+  color: #292626;
+  float: right;
+  clear: both;
+  font: bold 5rem/1.5 'Audiowide', cursive;
 }
 .button {
   margin-top: 4rem;
