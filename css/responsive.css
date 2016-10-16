@@ -1,0 +1,32 @@
+@media (max-width: 1285px){
+  #quiz {
+    background-image: url(../img/orange.jpg);
+    max-width: 100%;
+    background-size: cover;
+  }
+  #question {
+    width: 100%;
+  }
+  #answer {
+    width: 100%;
+  }
+  .one {
+    width:40%;
+    margin:4%;
+    height:20%;
+  }
+  .two {
+  width:40%;
+  margin:4%;
+  height:20%;
+  }
+  .three {
+  width:40%;
+  margin:4%;
+  height:20%;
+  }
+  .four {
+  width:40%;
+  margin:4%;
+  height:20%;
+  }
