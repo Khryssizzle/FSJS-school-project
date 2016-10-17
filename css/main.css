@@ -23,26 +23,17 @@
   display:inline-block;
   width: 35%;
 }
-
-.left {
-  display: inline-block;
-  margin-left: 20px;
-  margin-right: 15%;
-  float: left;
-}
-.text {
+.text1 {
   margin-top: 10px;
 }
 .text2 {
-  margin-top: 5%;
+  margin-top: 10%;
 }
 .text3 {
   margin-top: 5%;
 }
-.right {
-  display: inline-block;
+#right {
   float: right;
-  margin-left: 15%;
 }
 
 .text4 {
@@ -55,10 +46,9 @@
 .text6 {
   margin-top: 5%;
 }
-.button {
-  margin-top: 4rem;
 
-}
+
+
 .tardis{
   background-size: cover;
 }
@@ -90,8 +80,8 @@
   padding: 0;
 }
 .main {
-  width: 50%;
-  height: 10%;
+  width: 300px;
+  height: 100px;
   margin: 50px 75px 50px 50px;
   color: white;
   font: bold 2rem/1.5 'Righteous', cursive;
@@ -123,4 +113,13 @@
   float: right;
   margin: 70px 125px 15px 10px;
   padding: 20px;
+}
+.six {
+  float:right;
+}
+.eight {
+  float:right;
+}
+#answer button {
+  margin: 20px;
 }
