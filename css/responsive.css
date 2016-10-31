@@ -10,23 +10,28 @@
   #answer {
     width: 100%;
   }
-  .one {
+  #answer button {
     width:40%;
     margin:4%;
     height:20%;
   }
-  .two {
-  width:40%;
-  margin:4%;
-  height:20%;
+}
+
+@media (max-width: 1050px ){
+  .cyberman {
+    display: none;
   }
-  .three {
-  width:40%;
-  margin:4%;
-  height:20%;
+  #left {
+    width: 75%;
   }
-  .four {
-  width:40%;
-  margin:4%;
-  height:20%;
+}
+
+@media (max-width: 749px){
+  #answer button {
+    width:90%;
+    margin:5%;
+    height:10%;
+    float: left;
+    clear: both;
   }
+}

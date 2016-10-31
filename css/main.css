@@ -7,11 +7,11 @@
 }
 .tardis {
   margin-top: 5%;
-  margin-left:13%;
+  margin-left: 15%;
 }
 
 #soon {
-  background-image: url(../img/soon.png);
+  background-color: #636363;
   max-width: 100%;
   background-size: cover;
 }
@@ -21,23 +21,23 @@
   font: bold 4rem/1.5 'Audiowide', cursive;
   list-style: none;
   display:inline-block;
-  width: 35%;
+  width: 50%;
 }
-.text1 {
-  margin-top: 10px;
+.cyberman {
+  float: right;
+  margin-top: 8%;
+  margin-right: 5%;
 }
+
 .text2 {
-  margin-top: 10%;
+  margin-top: 5%;
 }
 .text3 {
   margin-top: 5%;
 }
 #right {
   float: right;
-}
-
-.text4 {
-  margin-top: 10px;
+  padding: 20px;
 }
 .text5 {
   margin-top: 5%;
@@ -47,11 +47,6 @@
   margin-top: 5%;
 }
 
-
-
-.tardis{
-  background-size: cover;
-}
 #quiz {
   background-image: url(../img/quiz.jpg);
   max-width: 100%;
@@ -75,19 +70,13 @@
   height: 300px;
   color: white;
   font: bold 2rem/1.5 'Righteous', cursive;
-  background-color: rgba(11, 27, 144, 0.9);
   border: 0;
-  padding: 0;
 }
-.main {
-  width: 300px;
-  height: 100px;
-  margin: 50px 75px 50px 50px;
-  color: white;
-  font: bold 2rem/1.5 'Righteous', cursive;
-  background-color: rgba(249, 125, 55, 0.9);
-  border: 0;
-  padding: 0;
+.blue{
+  background-color: rgba(11, 27, 144, 0.9);
+}
+.orange{
+  background-color: rgba(238, 118, 18, 0.9);
 }
 
 .one {
@@ -113,13 +102,4 @@
   float: right;
   margin: 70px 125px 15px 10px;
   padding: 20px;
-}
-.six {
-  float:right;
-}
-.eight {
-  float:right;
-}
-#answer button {
-  margin: 20px;
 }
