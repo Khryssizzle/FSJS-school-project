@@ -65,6 +65,160 @@ body {
   margin: 0px 0px 40px 0px;
 }
 
+/*questions*/
+#myQuiz .question {
+  width: 550px;
+  position: absolute;
+  top: 225px;
+  left: 660px;
+}
+
+#myQuiz .question .txt {
+  font-size: 1.6em;
+  margin: 0px 0px 20px 0px;
+}
+
+#myQuiz .question .ans {
+  display: inline-block;
+  font-size: 1.1em;
+  width: 225px;
+  border: 2px solid rgba(238, 189, 102, .4);
+  border-radius: 6px;
+  padding: 10px;
+  margin:  0px 15px 15px 0px;
+  position: relative;
+}
+
+#myQuiz .question .ans.selected {
+  border-color: #be4b16;
+}
+
+#myQuiz .question .ans.correct {
+  border-color: #459a2e;
+}
+
+#myQuiz .question .ans::after {
+  content:'';
+  display:block;
+  width: 20px;
+  height: 20px;
+  background: no-repeat 0px 0px;
+  background-size: 20px 20px;
+  position: absolute;
+  top: 5px;
+  right: 5px;
+}
+
+#myQuiz .question .ans.selected::after {
+  background-image: url(../img/dalek.png);
+}
+
+#myQuiz .question .ans.correct::after {
+  background-image: url(../img/k9.jpg);
+}
+
+#myQuiz .question.unanswered .ans {
+  cursor:pointer;
+}
+
+#myQuiz .question.unanswered .ans:hover {
+  background-color: rgba(238, 189, 102, .2);
+}
+
+#myQuiz .question.answered .ans {
+  cursor:default;
+}
+
+/*Feedback*/
+
+#myQuiz .feedback {
+  color: efbe5e;
+  margin-top: 50px;
+  transition: opacity 1.5s, margin-top 1.5s;
+  visibility: hidden;
+  opacity: 0;
+}
+
+#myQuiz .feedback .btn {
+  margin-top: 5px;
+}
+
+#myQuiz .feedback strong {
+  color: #fff;
+}
+
+#myQuiz .answered .feedback {
+  visibility: visible;
+  opacity: 1;
+  margin-top: 10px;
+}
+
+/*Results*/
+
+#myQuiz .results {
+  position:absolute;
+  top: 225px;
+  left: 660px;
+  width: 550px;
+}
+
+#myQuiz .results .share {
+  margin-top: 40px;
+}
+
+#myQuiz .results .share a.btn {
+  margin-right: 20px;
+  padding: 9px 15px 8px 42px;
+  background-repeat: no-repeat;
+  background-position: 10px 5px;
+  background-size: 25px 25px;
+}
+
+#myQuiz .results .share a.btn.email {
+  background-color: #f0a121;
+  background-image: url(../img/icon_email.svg);
+}
+
+#myQuiz .results .share a.btn.twitter {
+  background-color: #59adeb;
+  background-image: url(../img/icon_twitter.svg);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

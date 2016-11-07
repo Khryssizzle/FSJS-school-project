@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html ng-app="myQuiz"lang="en">
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -12,20 +12,41 @@
     <link rel="stylesheet" href="css/responsive.css">
   </head>
   <body>
-    <div id="myQuiz">
+    <div id="myQuiz" ng-controller="QuizController">
       <h1>Test Your Doctor Who Knowledge</h1>
-      <div class="progress"></div>
-      <div class="intro">
+      <div class="intro {{(activeQuestion > -1) ? 'inactive' : 'active'}}">
         <h2>Welcome</h2>
         <p>Click begin to test your knowledge of Doctor Who</p>
         <p class="btn">Begin</p>
       </div>
-      <div class="question"></div>
-      <div class="results"></div>
+      <div class="question answered">
+        <p class="txt"> This is a question</p>
+        <p class="ans">answer 1</p>
+        <p class="ans">answer 2</p>
+        <p class="ans">answer 3</p>
+        <p class="ans">answer 4</p>
+        <div class="feedback">
+          <p>You are <strong>correct</strong></p>
+          <p>Oops! That is not correct.</p>
+          <p>Additional feedback.</p>
+          <div class="btn">continue</div>
+        </div>
+      </div>
+      <div class="results">
+        <h3>Results</h3>
+        <p> you scored X% by correctly answering X of the total X questions.</p>
+        <p> use the links below to challenge your friends.</p>
+        <div class="share">
+          <a class="btn email" href="#">Email</a>
+          <a class="btn twitter" href="#">Tweet</a>
+        </div>
+      </div>
     </div>
 
 
 
+<script type="text/javascript" src="js/angular.min.js"></script>
+<script type="text/javascript" src="js/quiz.js"></script>
 
   </body>
 </html>
