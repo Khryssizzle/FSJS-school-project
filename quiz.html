@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html ng-app="myQuiz"lang="en">
+<html ng-app="myQuiz" lang="en">
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -14,10 +14,10 @@
   <body>
     <div id="myQuiz" ng-controller="QuizController">
       <h1>Test Your Doctor Who Knowledge</h1>
-      <div class="intro {{(activeQuestion > -1) ? 'inactive' : 'active'}}">
+      <div class="intro {{ (activeQuestion > -1) ? 'inactive' : 'active'}}">
         <h2>Welcome</h2>
         <p>Click begin to test your knowledge of Doctor Who</p>
-        <p class="btn">Begin</p>
+        <p class="btn" ng-click="activeQuestion">Begin</p>
       </div>
       <div class="question answered">
         <p class="txt"> This is a question</p>
@@ -45,8 +45,8 @@
 
 
 
-<script type="text/javascript" src="js/angular.min.js"></script>
-<script type="text/javascript" src="js/quiz.js"></script>
+    <script src="js/angular.min.js" type="text/javascript"></script>
+    <script src="js/quiz.js" type="text/javascript"></script>
 
   </body>
 </html>
