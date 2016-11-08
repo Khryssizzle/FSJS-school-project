@@ -1,7 +1,7 @@
 [
   {
     "question" : "What does the Eleventh Doctor think is cool?",
-    "answer"   : [
+    "answers"   : [
         { "id" : 0, "text" : "Bowties"},
         { "id" : 1, "text" : "Fezzes"},
         { "id" : 2, "text" : "Stetsons"},
@@ -11,7 +11,7 @@
   },
   {
     "question" : "Which Doctor always wears converse?",
-    "answer"   : [
+    "answers"   : [
         { "id" : 0, "text" : "The Ninth Doctor"},
         { "id" : 1, "text" : "The Tenth Doctor"},
         { "id" : 2, "text" : "The Eleventh Doctor"},
@@ -21,7 +21,7 @@
   },
   {
     "question" : "Which instrument does the Twelfth Doctor play?",
-    "answer"   : [
+    "answers"   : [
         { "id" : 0, "text" : "Guitar"},
         { "id" : 1, "text" : "Saxaphone"},
         { "id" : 2, "text" : "Piano"},
@@ -31,7 +31,7 @@
   },
   {
     "question" : "What is River Song's other name?",
-    "answer"   : [
+    "answers"   : [
         { "id" : 0, "text" : "Rory Pond"},
         { "id" : 1, "text" : "Amy Pond"},
         { "id" : 2, "text" : "Melody Pond"},
@@ -41,7 +41,7 @@
   },
   {
     "question" : "What is the Ninth Doctor's catchphrase?",
-    "answer"   : [
+    "answers"   : [
         { "id" : 0, "text" : "Geronimo!"},
         { "id" : 1, "text" : "Exterminate!"},
         { "id" : 2, "text" : "I'm so, so sorry."},

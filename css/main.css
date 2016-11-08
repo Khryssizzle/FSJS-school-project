@@ -89,6 +89,13 @@ body {
   position: relative;
 }
 
+#myQuiz .question .ans.image {
+  min-height: 60px;
+  padding: 0px;
+  background-repeat: no-repeat;
+  background-position: 0px 0px;
+}
+
 #myQuiz .question .ans.selected {
   border-color: #be4b16;
 }
@@ -184,7 +191,7 @@ body {
   background-image: url(../img/icon_twitter.svg);
 }
 
-/*#myQuiz .active, #myQuiz .inactive {
+#myQuiz .active, #myQuiz .inactive {
   transition: left 1.5s ease-in-out;
 }
 
@@ -194,7 +201,7 @@ body {
 
 #myQuiz .intro.inactive, #myQuiz.inactive.answered {
   left: -1350px;
-}*/
+}
 
 
 
@@ -252,7 +259,7 @@ body {
 
 
 
-#main {
+/*#main {
   background-image: url(../img/background.jpg);
   max-width: 100%;
   background-size: cover;
@@ -354,4 +361,4 @@ body {
   float: right;
   margin: 70px 125px 15px 10px;
   padding: 20px;
-}
+}*/

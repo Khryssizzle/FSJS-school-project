@@ -17,22 +17,23 @@
       <div class="intro {{ (activeQuestion > -1) ? 'inactive' : 'active'}}">
         <h2>Welcome</h2>
         <p>Click begin to test your knowledge of Doctor Who</p>
-        <p class="btn" ng-click="activeQuestion">Begin</p>
+        <p class="btn" ng-click="activeQuestion = 0">Begin</p>
       </div>
-      <div class="question answered">
-        <p class="txt"> This is a question</p>
-        <p class="ans">answer 1</p>
-        <p class="ans">answer 2</p>
-        <p class="ans">answer 3</p>
-        <p class="ans">answer 4</p>
+      <div class="question  {{ $index === activeQuestion ? 'active' : 'inactive'}} {{ myQuestion.questionState === 'answered' ? 'answered' : 'unanswered'}}" ng-repeat="myQuestion in myQuestions">
+        <p class="txt">{{myQuestion.question}}</p>
+        <p class="ans"
+        ng-class="{image:Answer.image, selected:isSelected($parent.$index, $index), correct:isCorrect($parent.$index, $index)}"
+        ng-click="selectAnswer($parent.$index, $index)"
+        ng-repeat="Answer in myQuestions[$index].answers"
+        ng-style="'background-image':'url({{Answer.image}})'">{{Answer.text}}</p>
+
         <div class="feedback">
-          <p>You are <strong>correct</strong></p>
-          <p>Oops! That is not correct.</p>
-          <p>Additional feedback.</p>
-          <div class="btn">continue</div>
+          <p ng-show="myQuestion.correctness === 'correct'">You are <strong>correct</strong></p>
+          <p ng-show="myQuestion.correctness === 'incorrect'">Oops! That is not correct.</p>
+          <div class="btn" ng-click="selectContinue()">continue</div>
         </div>
       </div>
-      <div class="results">
+      <div class="results {{ (totalQuestions === activeQuestions) ? 'active' : 'inactive'}}">
         <h3>Results</h3>
         <p> you scored X% by correctly answering X of the total X questions.</p>
         <p> use the links below to challenge your friends.</p>
