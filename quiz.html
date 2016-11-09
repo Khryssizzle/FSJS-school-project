@@ -33,19 +33,14 @@
           <div class="btn" ng-click="selectContinue()">continue</div>
         </div>
       </div>
-      <div class="results {{ (totalQuestions === activeQuestions) ? 'active' : 'inactive'}}">
+      <div class="results {{ (totalQuestions === activeQuestion) ? 'active' : 'inactive'}}">
         <h3>Results</h3>
-        <p> you scored X% by correctly answering X of the total X questions.</p>
-        <p> use the links below to challenge your friends.</p>
-        <div class="share">
-          <a class="btn email" href="#">Email</a>
-          <a class="btn twitter" href="#">Tweet</a>
+        <p> You scored {{percentage}}% by correctly answering {{score}} of the total {{totalQuestions}} questions.</p>
+        <p> Use the links below to challenge your friends.</p>
+        <div class="share" ng-bind-html="createShareLinks(percentage)">
         </div>
       </div>
     </div>
-
-
-
     <script src="js/angular.min.js" type="text/javascript"></script>
     <script src="js/quiz.js" type="text/javascript"></script>
 

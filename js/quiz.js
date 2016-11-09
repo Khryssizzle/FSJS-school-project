@@ -27,7 +27,7 @@
         }
         $scope.myQuestions[qIndex].questionState = 'answered';
       }
-
+      $scope.percentage = (($scope.score / $scope.totalQuestions) * 100).toFixed(1);
     }
     $scope.isSelected = function(qIndex, aIndex) {
       return $scope.myQuestions[qIndex].selectedAnswer === aIndex;
@@ -37,6 +37,17 @@
     }
     $scope.selectContinue = function() {
       return $scope.activeQuestion += 1;
+    }
+    $scope.createShareLinks =function(percentage) {
+      var url = 'http://codifydesign.com';
+
+      var emailLink ='<a class="btn email" href="mailto:?subject=Try to beat my quiz score!&amp;body=I scored '+ percentage +'% on this Doctor Who quiz. Try to beat my score at '+ url +'"">Email a friend</a>';
+
+      var twitterLink ='<a class="btn twitter" target="_blank" href=https://twitter.com/intent/tweet?text=I scored '+ percentage +'% on this Doctor Who quiz. Try to beat my score at&amp;hashtags=DoctorWhoQuiz&amp;url='+ url +'">Tweet your score</a>';
+
+      var newMarkup = emailLink + twitterLink;
+
+      return $sce.trustAsHtml(newMarkup);
     }
 
 
