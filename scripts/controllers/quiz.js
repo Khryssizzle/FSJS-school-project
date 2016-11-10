@@ -1,13 +1,13 @@
-(function() {
-  var app = angular.module('myQuiz', []);
+'use strict';
 
-  app.controller('QuizController', ['$scope', '$http', '$sce', function($scope, $http, $sce) {
+angular.module('myQuiz')
+.controller('QuizController', ['$scope', '$http', '$sce', function($scope, $http, $sce, dataService) {
     $scope.score = 0;
     $scope.activeQuestion = -1;
     $scope.activeQuestionAnswered = 0;
     $scope.percentage = 0;
 
-    $http.get('quiz_data.json').then(function(quizData){
+    $http.get('mock/quiz_data.json').then(function(quizData){
       $scope.myQuestions = quizData.data;
       $scope.totalQuestions = $scope.myQuestions.length;
     });
@@ -43,18 +43,11 @@
 
       var emailLink ='<a class="btn email" href="mailto:?subject=Try to beat my quiz score!&amp;body=I scored '+ percentage +'% on this Doctor Who quiz. Try to beat my score at '+ url +'"">Email a friend</a>';
 
-      var twitterLink ='<a class="btn twitter" target="_blank" href=https://twitter.com/intent/tweet?text=I scored '+ percentage +'% on this Doctor Who quiz. Try to beat my score at&amp;hashtags=DoctorWhoQuiz&amp;url='+ url +'">Tweet your score</a>';
+      var twitterLink ='<a class="btn twitter" href=https://twitter.com/intent/tweet?text=I scored '+ percentage +'% on this Doctor Who quiz. Try to beat my score at&amp;hashtags=DoctorWhoQuiz&amp;url='+ url +'">Tweet your score</a>';
 
       var newMarkup = emailLink + twitterLink;
 
       return $sce.trustAsHtml(newMarkup);
     }
 
-
-
-
-
   }]);
-
-
-})();

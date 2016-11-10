@@ -6,17 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>FSJS Project</title>
     <link rel="stylesheet" src="//normalize-css.googlecode.com/svn/trunk/normalize.css" />
-    <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="css/responsive.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Righteous" rel="stylesheet">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/responsive.css">
   </head>
-  <body>
-    <img src="img/tardis.png" class="tardis" alt="tardis">
-       <span id="answer">
-           <button class="one orange quiz">Quiz Challenge</button>
-           <button class="two orange quiz">Matching Game</button>
-           <button class="three orange quiz">Guess the Episode</button>
-           <button class="four orange quiz">Coloring Pages</button>
-       </span>
-    <script src="js/quiz.js" </script>
+  <body ng-app="myQuiz">
+    <questions><questions>
+    <script src="vendor/angular.js" type="text/javascript"></script>
+    <script src="app.js" type="text/javascript"></script>
+    <script src="scripts/controllers/quiz.js" type="text/javascript"></script>
+    <script src="scripts/services/data.js" type="text/javascript"></script>
+    <script src="scripts/directives/questions.js" type="text/javascript"></script>
   </body>
 </html>
