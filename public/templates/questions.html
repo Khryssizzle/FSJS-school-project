@@ -7,7 +7,7 @@
   <div class="question  {{ $index === activeQuestion ? 'active' : 'inactive'}} {{ myQuestion.questionState === 'answered' ? 'answered' : 'unanswered'}}" ng-repeat="myQuestion in myQuestions">
     <p class="txt">{{myQuestion.question}}</p>
     <p class="ans"
-    ng-class="{image:Answer.image, selected:isSelected($parent.$index, $index), correct:isCorrect($parent.$index, $index)}"
+    ng-class="{selected:isSelected($parent.$index, $index), correct:isCorrect($parent.$index, $index)}"
     ng-click="selectAnswer($parent.$index, $index)"
     ng-repeat="Answer in myQuestions[$index].answers">{{Answer.text}}</p>
     <div class="feedback">
@@ -23,3 +23,4 @@
     <div class="share" ng-bind-html="createShareLinks(percentage)">
     </div>
   </div>
+</div>

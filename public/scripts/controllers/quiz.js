@@ -1,7 +1,7 @@
 'use strict';
 
-angular.module('myQuiz')
-.controller('QuizController', ['$scope', '$http', '$sce', function($scope, $http, $sce, dataService) {
+angular.module('theQuiz')
+.controller('QuizController', ['$scope', '$http', '$sce', function($scope, $http, $sce) {
     $scope.score = 0;
     $scope.activeQuestion = -1;
     $scope.activeQuestionAnswered = 0;
