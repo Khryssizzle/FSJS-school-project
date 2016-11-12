@@ -1,5 +1,7 @@
 'use strict';
 
+var angular = require('angular');
+
 angular.module('theQuiz')
 .controller('QuizController', ['$scope', '$http', '$sce', function($scope, $http, $sce) {
     $scope.score = 0;
