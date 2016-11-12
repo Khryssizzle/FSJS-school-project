@@ -1,8 +1,4 @@
-/*html {
-  background: url(../img/quiz.jpg) no-repeat center center fixed;
-  background-size: cover;
 
-}*/
 
 body {
   padding: 20px;
@@ -11,7 +7,7 @@ body {
 }
 #myQuiz {
   font: bold 24px/1.5 'Righteous', cursive;
-  color: rgb(11, 27, 144);
+  color: #fff;
 
 }
 #myQuiz h2 {

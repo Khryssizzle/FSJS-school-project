@@ -17,6 +17,10 @@
   },
   "homepage": "https://github.com/Khryssizzle/FSJS-school-project#readme",
   "dependencies": {
+    "angular": "^1.5.8",
     "express": "^4.14.0"
+  },
+  "devDependencies": {
+    "webpack": "^1.13.3"
   }
 }
