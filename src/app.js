@@ -2,11 +2,11 @@
 
 var express = require('express');
 var router = require('./api');
-var database = require('./database');
 
 var app = express();
 
-
+require('./database');
+require('./seed');
 
 app.use('/', express.static('public'));
 

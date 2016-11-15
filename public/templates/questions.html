@@ -1,7 +1,12 @@
 <div id="myQuiz">
   <div class="intro {{ (activeQuestion > -1) ? 'inactive' : 'active'}}">
     <h2>Welcome</h2>
-    <p>Click begin to test your knowledge of Doctor Who</p>
+    <p>Fill in your name and click begin to test your knowledge of Doctor Who</p>
+    <form>
+      Name:<br>
+      <input type="text" name="name" value=""><br>
+      <input type="submit" value="Submit">
+    </form>
     <p class="btn" ng-click="activeQuestion = 0">Begin</p>
   </div>
   <div class="question  {{ $index === activeQuestion ? 'active' : 'inactive'}} {{ myQuestion.questionState === 'answered' ? 'answered' : 'unanswered'}}" ng-repeat="myQuestion in myQuestions">

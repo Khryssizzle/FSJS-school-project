@@ -1,18 +1,24 @@
 'use strict';
 
 var express = require('express');
-var quiz = require('../../public/mock/quiz_data.json');
+var Quiz = require('../models/score.js');
+// var quiz = require('../../public/mock/quiz_data.json');
 
 var router = express.Router();
 
   router.get('/quiz', function(req, res) {
-    res.json({questions: quiz});
+    Quiz.find({}, function(err, quiz) {
+      if(err) {
+
+      return res.status(500).json({message: err.message});
+      }
+      res.json({questions: quiz});
+    });
   });
 
 // todo: add post route to keep score
 //
 // todo: add put route to update score
-//
-// todo: add delete route to delete score
+
 
 module.exports = router;
