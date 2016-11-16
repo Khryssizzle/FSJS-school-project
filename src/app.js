@@ -2,14 +2,13 @@
 
 var express = require('express');
 var router = require('./api');
-
+require('./api/index');
+require('./database');
 var app = express();
 
-require('./database');
-require('./seed');
+
 
 app.use('/', express.static('public'));
-
 app.use('/api', router);
 
 app.listen(3000, function() {

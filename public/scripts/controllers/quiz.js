@@ -1,6 +1,7 @@
 'use strict';
 
-var angular = require('angular');
+
+
 
 angular.module('theQuiz')
 .controller('QuizController', ['$scope', '$http', '$sce', function($scope, $http, $sce) {
@@ -14,6 +15,14 @@ angular.module('theQuiz')
       $scope.totalQuestions = $scope.myQuestions.length;
     });
 
+ // for submit name button
+    $scope.submit = function(){
+      $scope.text = "";
+        if ($scope.text) {
+          $scope.push(this.text);
+        }
+      };
+// for quiz function
     $scope.selectAnswer = function(qIndex, aIndex) {
       var questionState = $scope.myQuestions[qIndex].questionState;
 
@@ -40,16 +49,6 @@ angular.module('theQuiz')
     $scope.selectContinue = function() {
       return $scope.activeQuestion += 1;
     }
-    $scope.createShareLinks =function(percentage) {
-      var url = 'http://codifydesign.com';
 
-      var emailLink ='<a class="btn email" href="mailto:?subject=Try to beat my quiz score!&amp;body=I scored '+ percentage +'% on this Doctor Who quiz. Try to beat my score at '+ url +'"">Email a friend</a>';
-
-      var twitterLink ='<a class="btn twitter" href=https://twitter.com/intent/tweet?text=I scored '+ percentage +'% on this Doctor Who quiz. Try to beat my score at&amp;hashtags=DoctorWhoQuiz&amp;url='+ url +'">Tweet your score</a>';
-
-      var newMarkup = emailLink + twitterLink;
-
-      return $sce.trustAsHtml(newMarkup);
-    }
 
   }]);

@@ -1,4 +1,6 @@
-var angular = require('angular');
+'use strict'
+
+
 
 angular.module('theQuiz')
 .directive('questions', function (){
