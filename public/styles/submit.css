@@ -1,0 +1,78 @@
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  background: url(../img/blue.png) no-repeat center center fixed;
+  background-size: cover;
+}
+
+a {
+  color: #00B7FF;
+}
+
+h1 {
+  color: white;
+}
+section {
+
+  background: #bdc3c7;
+  padding: 10px;
+  margin: 30px;
+  width: 300px;
+  min-height: 400px;
+}
+
+section:first-of-type {
+  margin-left: 0;
+}
+
+section:last-of-type {
+  margin-right: 0;
+}
+
+section h3 {
+  border-bottom: 1px solid black;
+  padding-bottom: 5px;
+  color: white;
+  text-align: center;
+}
+
+.insert {
+  background: rgba(71,126,201,.8);
+  float: left;
+}
+
+.get {
+  background: rgba(71,126,201,.8);
+  float: right;
+}
+
+.input label {
+  display: block;
+  font-weight: bold;
+  padding: 2px 0;
+  margin: 9px;
+}
+
+input,
+button {
+  font: inherit;
+}
+
+button {
+  border: none;
+  border-radius: 0;
+  background: #ecf0f1;
+  cursor: pointer;
+  margin-top: 12px;
+}
+
+button:hover {
+  background: #bdc3c7;
+}
+
+.item {
+  margin: 10px 0;
+  padding: 5px;
+  background: #78A3DF;
+  border: 1px solid black;
+}

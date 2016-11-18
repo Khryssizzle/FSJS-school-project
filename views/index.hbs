@@ -1,0 +1,40 @@
+<h1>Submit a Doctor Who Question!</h1>
+<section class="insert">
+    <h3>Submit Here</h3>
+    <form action="/insert" method="post">
+        <div class="input">
+            <label for="name">Name</label>
+            <input type="text" id="title" name="name">
+        </div>
+        <div class="input">
+            <label for="email">Email</label>
+            <input type="text" id="content" name="email">
+        </div>
+        <div class="input">
+            <label for="question">Question</label>
+            <input type="text" id="author" name="question">
+        </div>
+        <div class="input">
+            <label for="answers">Answers</label>
+            <input type="text" id="title" name="answers">
+        </div>
+        <div class="input">
+            <label for="correct">Correct Answer</label>
+            <input type="text" id="title" name="correct">
+        </div>
+        <button type="submit">SUBMIT</button>
+    </form>
+</section>
+<section class="get">
+    <h3>Submitted Questions</h3>
+    <div>
+        {{# each items }}
+            <article class="item">
+                <div>Question: {{ this.question }}</div>
+                <div>Answers: {{ this.answers }}</div>
+                <div>Correct Answer: {{ this.correct }}</div>
+                <div>ID: {{ this._id }}</div>
+            </article>
+        {{/each}}
+    </div>
+</section>

@@ -1,12 +1,7 @@
 <div id="myQuiz">
   <div class="intro {{ (activeQuestion > -1) ? 'inactive' : 'active'}}">
     <h2>Welcome</h2>
-    <p>Submit your name and click begin to test your knowledge of Doctor Who</p>
-    <form ng-submit="submit()">
-      <label> Name:</label>
-      <input type="text" value="" name ="name">
-      <input type="submit" value="Submit">
-    </form>
+    <p>Click begin to test your knowledge of Doctor Who</p>
     <p class="btn" ng-click="activeQuestion = 0">Begin</p>
   </div>
   <div class="question  {{ $index === activeQuestion ? 'active' : 'inactive'}} {{ myQuestion.questionState === 'answered' ? 'answered' : 'unanswered'}}" ng-repeat="myQuestion in myQuestions">
@@ -23,7 +18,8 @@
   </div>
   <div class="results {{ (totalQuestions === activeQuestion) ? 'active' : 'inactive'}}">
     <h3>Results</h3>
-    <p> {{this.name}} scored {{percentage}}% by correctly answering {{score}} of the total {{totalQuestions}} questions.</p>
-    <p class="users"></p>
+    <p> You scored {{percentage}}% by correctly answering {{score}} of the total {{totalQuestions}} questions.</p>
+    <br>
+    <a href="/get-data">Click HERE to submit a question for the quiz.</a>
   </div>
 </div>

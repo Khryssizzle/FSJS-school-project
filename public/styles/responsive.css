@@ -14,4 +14,11 @@
     margin-left: 10%;
     margin-right: 10%;
   }
+  .get {
+    float: left;
+    margin-left: 0px;
+  }
+.insert h3 {
+    text-align: center;
+  }
 }
