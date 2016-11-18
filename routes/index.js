@@ -32,7 +32,6 @@ router.post('/insert', function(req, res, next) {
   };
   var data = new UserData(item);
   data.save();
-
   res.redirect('/get-data');
 });
 

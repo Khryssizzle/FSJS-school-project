@@ -1,8 +1,6 @@
 'use strict';
 
 
-
-
 angular.module('theQuiz')
 .controller('QuizController', ['$scope', '$http', '$sce', function($scope, $http, $sce) {
     $scope.score = 0;
@@ -15,14 +13,8 @@ angular.module('theQuiz')
       $scope.totalQuestions = $scope.myQuestions.length;
     });
 
- // for submit name button
-    $scope.submit = function(){
-      $scope.text = "";
-        if ($scope.text) {
-          $scope.push(this.text);
-        }
-      };
-// for quiz function
+
+// for quiz functionality
     $scope.selectAnswer = function(qIndex, aIndex) {
       var questionState = $scope.myQuestions[qIndex].questionState;
 
